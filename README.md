@@ -6,6 +6,8 @@ Built in 2025 by [Elias Lujan (Kazin)](https://kazin.dev) on a free HTML Codex t
 
 [![Landing page](docs/screenshots/home-1440.jpg)](https://kazin.dev/projects/brasador/)
 
+[![The menu](docs/screenshots/menu-1440.jpg)](https://kazin.dev/projects/brasador/menu.html)
+
 ## What a visitor meets
 
 - **Landing**: the restaurant's logo, "Comida Tradicional Armenia" over a looping video of the grill, two calls to action: see the menu, book a table.
