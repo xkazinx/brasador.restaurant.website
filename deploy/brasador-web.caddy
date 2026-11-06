@@ -4,7 +4,10 @@ redir /projects/brasador /projects/brasador/ permanent
 
 # The old address keeps working
 redir /brasador-web /projects/brasador/ permanent
-redir /brasador-web/* /projects/brasador{uri} permanent
+handle /brasador-web/* {
+	uri strip_prefix /brasador-web
+	redir * /projects/brasador{uri} permanent
+}
 
 # The static site, with the prefix taken off.
 handle_path /projects/brasador/* {
