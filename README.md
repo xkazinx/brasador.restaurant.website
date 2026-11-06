@@ -2,6 +2,8 @@
 
 The website of **Brasad'Or**, a restaurant in Spain serving traditional Armenian food: grilled meats, skewers and the dishes of the house. One page in Spanish for the restaurant, its services, bookings and contact, plus its **menu**, kept online by the restaurant itself from an admin panel. Live at **[kazin.dev/projects/brasador](https://kazin.dev/projects/brasador/)**.
 
+**Made without AI** until the first Claude commit (4940ddc, 2026-10-18); AI was used after that for the updated deployment and this README.
+
 Built in 2025 by [Elias Lujan (Kazin)](https://kazin.dev) on a free HTML Codex template; the menu system added in 2026.
 
 [![Landing page](docs/screenshots/home-1440.jpg)](https://kazin.dev/projects/brasador/)
