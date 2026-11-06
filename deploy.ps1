@@ -1,4 +1,4 @@
-# Publishes the site to the local server (ssh alias kazin-music) at https://kazin.dev/brasador-web/
+# Publishes the site to the local server (ssh alias kazin-music) at https://kazin.dev/projects/brasador/
 # Usage: powershell -ExecutionPolicy Bypass -File deploy.ps1
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
@@ -26,5 +26,5 @@ rm -f /tmp/brasador-web.tgz /tmp/brasador-web.caddy
 '@
 Remove-Item $tar
 
-$code = (Invoke-WebRequest -UseBasicParsing https://kazin.dev/brasador-web/).StatusCode
-"https://kazin.dev/brasador-web/ -> $code"
+$code = (Invoke-WebRequest -UseBasicParsing https://kazin.dev/projects/brasador/).StatusCode
+"https://kazin.dev/projects/brasador/ -> $code"

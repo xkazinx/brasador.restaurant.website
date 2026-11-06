@@ -1,9 +1,13 @@
-# Brasador (brasador-web) at kazin.dev/brasador-web.
+# Brasador (brasador-web) at kazin.dev/projects/brasador.
 # Imported inside the kazin.dev site block (`import /etc/caddy/sites/kazin.dev.d/*.caddy`).
-redir /brasador-web /brasador-web/ permanent
+redir /projects/brasador /projects/brasador/ permanent
+
+# The old address keeps working
+redir /brasador-web /projects/brasador/ permanent
+redir /brasador-web/* /projects/brasador{uri} permanent
 
 # The static site, with the prefix taken off.
-handle_path /brasador-web/* {
+handle_path /projects/brasador/* {
 	root * /opt/brasador-web/web
 	@revalidate path / /index.html
 	header @revalidate Cache-Control "no-cache"
