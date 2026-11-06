@@ -2,12 +2,9 @@
 # Imported inside the kazin.dev site block (`import /etc/caddy/sites/kazin.dev.d/*.caddy`).
 redir /projects/brasador /projects/brasador/ permanent
 
-# The old address keeps working
-redir /brasador-web /projects/brasador/ permanent
-handle /brasador-web/* {
-	uri strip_prefix /brasador-web
-	redir * /projects/brasador{uri} permanent
-}
+# The old address keeps working: the part after /brasador-web is carried over
+@old path_regexp old ^/brasador-web(/.*)?$
+redir @old /projects/brasador{re.old.1} permanent
 
 # The static site, with the prefix taken off.
 handle_path /projects/brasador/* {
