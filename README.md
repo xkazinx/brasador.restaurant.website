@@ -19,20 +19,6 @@ Built in 2025 by [Elias Lujan (Kazin)](https://kazin.dev) on a free HTML Codex t
 - **Edit the menu online** at `admin/`, with a password: add, rename, reorder or remove categories and subcategories; add dishes with name and description in Spanish and English, a price or a list of formats with their prices, the allergens, a photo (uploaded from the phone, resized on the server), and mark a dish as unavailable without deleting it.
 - Every save publishes at once and keeps a copy of the previous menu (the last thirty, in `data/backups/`).
 
-## Screenshots
-
-Taken from the live site on 2026-11-06.
-
-| | |
-|---|---|
-| [![Menu](docs/screenshots/menu-1440.jpg)](docs/screenshots/menu-1440.jpg) The menu | [![Services](docs/screenshots/services-1440.jpg)](docs/screenshots/services-1440.jpg) Services |
-| [![Menu gallery](docs/screenshots/reserve-1440.jpg)](docs/screenshots/reserve-1440.jpg) Gallery | [![Contact](docs/screenshots/contact-1440.jpg)](docs/screenshots/contact-1440.jpg) Contact |
-
-<p>
-  <img src="docs/screenshots/home-mobile.jpg" alt="Landing page on a phone" width="195">
-  <img src="docs/screenshots/menu-mobile.jpg" alt="The menu on a phone" width="195">
-</p>
-
 ## What runs behind it
 
 - **Static HTML** for the pages: `index.html` and `menu.html` with their CSS, fonts, images and scripts; the video is a local WebM.
