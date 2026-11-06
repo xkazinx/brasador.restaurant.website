@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Carta - Brasad'Or</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="La carta de Brasad'Or: entrantes, brochetas, shawarmas, parrilladas, pescados, postres caseros, vinos y licores." name="description">
+    <link rel="icon" href="img/logo_new.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+</head>
+<body class="menu-page">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 menu-nav">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo_new.png" alt="Brasad'Or" class="menu-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="index.html" class="nav-item nav-link" data-t="nav.home">Inicio</a>
+                <a href="menu.html" class="nav-item nav-link active" data-t="nav.menu">Carta</a>
+                <a href="index.html#reserve" class="nav-item nav-link" data-t="nav.book">Reservar</a>
+                <a href="index.html#contact" class="nav-item nav-link" data-t="nav.contact">Contacto</a>
+            </div>
+            <div class="menu-lang" role="group" aria-label="Idioma">
+                <button type="button" class="menu-lang-btn" data-lang="es">ES</button>
+                <button type="button" class="menu-lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="menu-hero">
+        <div class="container text-center">
+            <h5 class="section-title ff-secondary text-primary fw-normal" data-t="hero.kicker">Brasad'Or</h5>
+            <h1 class="text-white mb-3" data-t="hero.title">Nuestra Carta</h1>
+            <p class="text-white-50 mb-4" data-t="hero.subtitle">Cocina tradicional armenia a la brasa.</p>
+            <div class="menu-search">
+                <i class="fa fa-search"></i>
+                <input type="search" id="menuSearch" data-t-placeholder="search" placeholder="Buscar un plato, una bebida, un ingrediente...">
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-catbar" id="menuCatbar">
+        <div class="menu-catbar-inner" id="menuCats"></div>
+    </div>
+
+    <main class="container menu-main" id="menuMain">
+        <div class="menu-loading" id="menuLoading"><i class="fa fa-spinner fa-spin"></i></div>
+    </main>
+
+    <section class="container menu-allergens" id="menuAllergens"></section>
+
+    <footer class="menu-footer">
+        <div class="container text-center">
+            <p id="menuNotes" class="mb-2"></p>
+            <p class="mb-0 small text-white-50" id="menuUpdated"></p>
+            <a href="index.html" class="btn btn-primary mt-4" data-t="footer.back">Volver al inicio</a>
+        </div>
+    </footer>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" id="menuTop"><i class="bi bi-arrow-up fa fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -6,10 +6,17 @@ redir /projects/brasador /projects/brasador/ permanent
 @old path_regexp old ^/brasador-web(/.*)?$
 redir @old /projects/brasador{re.old.1} permanent
 
-# The static site, with the prefix taken off.
+# The static site plus the menu API and its admin page (PHP through php-fpm), with the prefix taken off.
 handle_path /projects/brasador/* {
 	root * /opt/brasador-web/web
-	@revalidate path / /index.html
-	header @revalidate Cache-Control "no-cache"
+
+	# the menu's backups are not for visitors
+	@private path /data/backups/*
+	respond @private 404
+
+	@fresh path / /index.html /menu.html /data/menu.json
+	header @fresh Cache-Control "no-cache"
+
+	php_fastcgi unix//run/php/php-fpm.sock
 	file_server
 }
